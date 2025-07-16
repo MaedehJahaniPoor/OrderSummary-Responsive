@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --ff :"Red Hat Display";   
+}
+
+
+
+body {
+    font-family: var(--ff);
+    background-image: url("./order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat:no-repeat;
+    background-color:hsl(225, 100%, 98%);
+    background-size:100% 60%;
+    padding:0;
+    margin:0;
+}   
+
+div.card {
+    width:450px;
+    margin:50px auto;
+    background-color: white;
+    height:auto;
+    border-radius:20px;
+    overflow: hidden;
+}
+
+section.text {
+    text-align:center;
+}
+
+section.text h2 {
+    text-align:center;
+    font-weight:900;
+    color:hsl(223, 47%, 23%);
+}
+
+section.text p {
+    text-align:center;
+    font-size:14px;
+    color:hsl(224, 15%, 38%);
+    margin: 20px auto;
+}
+
+.container {
+    margin: 0 40px;
+}
+
+section.price {
+    background-color:hsl(225, 100%, 98%);
+    height:90px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:10px;
+}
+
+section.price img {
+    margin:20px;
+}
+
+section.price .flex-content {
+    display:flex;
+    flex-direction:column;
+    flex-grow:2;
+    font-size:13px;
+}
+
+section.price .flex-content .plan {
+    font-weight:900; 
+    margin-bottom:4px;
+}
+
+section.price .flex-content .plan-price {
+    color:hsl(224, 23%, 55%);
+    font-weight:700;
+}
+
+section.price span a {
+    margin-right:20px;
+    font-size:13px;
+    color:black;
+    text-decoration: none;
+}
+
+section.price span a:hover {
+    text-decoration:underline;
+    color:hsl(245, 75%, 52%);
+    font-weight:700;
+}
+section.action {
+    display:flex;
+    flex-direction:column;
+    
+}
+
+section.action .payment {
+    background-color:hsl(245, 75%, 52%);
+    border:none;
+    font-size:13px;
+    font-family:var(--ff);
+    margin: 30px 0;
+    height:40px;
+    color:white;
+    font-weight:700;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+section.action .payment:hover {
+    box-shadow:0 10px 10px -5px hsl(246, 28%, 62%);
+}
+
+
+section.action .cancel {
+    border:none;
+    font-size:12px;
+    font-family:var(--ff);
+    height:40px;
+    cursor:pointer;
+    font-weight:700;
+    color:hsl(224, 23%, 55%);
+    border-radius:8px;
+    display:inline-block;
+    margin:auto;
+    margin-bottom:15px;
+}
+
+@media screen and (max-width:485px) {
+    body {
+    background-image: url("./order-summary-component-main/images/pattern-background-mobile.svg");
+    padding:0;
+    margin:0;
+}   
+
+div.card {
+    width:90%;
+    max-width:90%;
+    margin:20px;
+}
+}
+@media screen and (max-width:376px) {
+    body {
+    background-image: url("./order-summary-component-main/images/pattern-background-mobile.svg");
+    padding:0;
+    margin:0;
+}   
+
+div.card {
+    width:300px;
+    max-width:90%;
+    margin:50px auto;
+}
+
+section.text h2 {
+    font-size:20px;
+    margin-top:10px;
+    margin-bottom:0;
+}
+
+section.text p {
+    font-size:12px;
+    margin: 15px auto;
+}
+
+.container {
+    margin: 0 20px;
+}
+
+section.price {
+    height:80px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-radius:10px;
+}
+
+section.price img {
+    margin:10px;
+}
+
+section.price .flex-content {
+    font-size:12px;
+}
+
+
+section.price span a {
+    margin-right:12px;
+    font-size:12px;
+}
+
+section.action .payment {
+    font-size:12px;
+    margin: 18px 0;
+}
+
+
+}
